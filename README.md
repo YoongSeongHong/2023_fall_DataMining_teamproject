@@ -10,7 +10,8 @@
 ### 활용 데이터
 https://www.kaggle.com/datasets/yasserhessein/thyroid-disease-data-set \
 아래와 같이 다양한 feature가 존재하고, 예측하고자 하는 Target 변수는 크게 갑상선 기능 항진증과 갑상선 기능 저하증에 대한 진단 결과. 그 외에도 결합 단백질이나 대체 요법과 같이 추가적인 상태들을 나타내는 값들도 포함
-![alt text](image-6.png)
+![image](https://github.com/user-attachments/assets/782da076-8d14-4fa4-b6c6-43f607264ea2)
+
 
 <br>
 
