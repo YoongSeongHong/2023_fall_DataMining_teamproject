@@ -17,7 +17,8 @@ https://www.kaggle.com/datasets/yasserhessein/thyroid-disease-data-set \
 
 그리고 실제 데이터를 보면 X|Y로 두가지 상태가 포함된 데이터들이 몇 개 보이는데, 
 이는 X와 일치하지만 Y일 가능성이 더 크다는 것을 의미.
-![alt text](image-7.png)
+![image](https://github.com/user-attachments/assets/28206325-ee82-4e1b-b720-b564dd5e54cd)
+
 
 
 <br>
@@ -26,23 +27,29 @@ https://www.kaggle.com/datasets/yasserhessein/thyroid-disease-data-set \
 
 범주형 변수들은 대부분 true false로 이진 분류된
 데이터였고, false 값이 90%정도를 차지하는 것을 확인 가능
-![alt text](image-8.png)
+![image](https://github.com/user-attachments/assets/23a82e7b-ffb9-4bf6-be03-54b8a5b1d147)
+
 
 <br>
 
 수치형 변수들은 대부분 고르게 분포 
-![alt text](image-9.png)
+![image](https://github.com/user-attachments/assets/4d4f7329-2961-401c-92e5-8b3c0ae3e2b2)
+
 
 <br>
 
 box plot으로 확인한 결과 이상치가 꽤 많이 존재하는 것을 확인 가능. 하지만 해당 변수에 대해서 전문지식이 없고, 값 자체는 이상치로 나타나지만 실제로 환자는 해당 수치를 가질 수 있기에 제거하는 것은 지양해야 함. 만약 이 모델이 현업에서 사용된다면, 도메인 지식이 충분한 전문가들의 의견을 통해 적절한 범위를 설정한 뒤 처리가 필요할 것으로 판단. 그 외 나이 컬럼의 이상치나 중복 컬럼 및 결측치가 너무 많은 컬럼은 삭제
-![alt text](image-10.png)
+![image](https://github.com/user-attachments/assets/e8fc9b60-7160-4e3c-bf87-28ee33151555)
+
+
 
 <br>
 
 target 컬럼을 단순히 양성인지 음성인지 / 갑상선 기능 항진증인지 저하증인지 음성인지에 따른 분포 확인. 모델링은 이진 분류로 진행
-![alt text](image-11.png)
-![alt text](image-12.png)
+![image](https://github.com/user-attachments/assets/281a6dad-dc35-4342-9440-513e0a38ef64)
+
+![image](https://github.com/user-attachments/assets/f2bedd44-0725-4117-aa70-577c88db6f6f)
+
 
 <br>
 
@@ -75,12 +82,13 @@ target 컬럼을 단순히 양성인지 음성인지 / 갑상선 기능 항진�
 
 ### 실험 결과
 평가 지표는 f1-score와 2종 오류의 치명성을 고려한 recall 사용
-![alt text](image-13.png)
-![alt text](image-14.png)
-![alt text](image-15.png)
-![alt text](image-16.png)
-![alt text](image-17.png)
-![alt text](image-18.png)
+![image](https://github.com/user-attachments/assets/db2aa403-7125-45a8-bb81-f0c07c693e4f)
+![image](https://github.com/user-attachments/assets/48a3c52f-8441-46ba-9947-0a0d53ad8ffc)
+![image](https://github.com/user-attachments/assets/9456be87-4393-44ef-8a72-40d77408c8f9)
+![image](https://github.com/user-attachments/assets/6a380a15-3055-41bd-a3bd-f4e5fcc57ab3)
+![image](https://github.com/user-attachments/assets/21585fa4-6eb4-43c9-bfe5-6cd12bc1df1b)
+![image](https://github.com/user-attachments/assets/2a82db4b-38f2-4349-9092-35eeabc68a7a)
+
 
 #### 결과 요약
 - NB: 학습 및 추론 시간은 적으나 두 평가지표 모두 낮음
